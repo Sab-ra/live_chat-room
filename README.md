@@ -1,4 +1,6 @@
-# live_chat
+# live_chat-room
+
+This is a learning project. I'm following Netninja.dev. Thank you, Shaun!
 
 ## Project setup
 ```
