@@ -1,17 +1,20 @@
 <template>
   <div class="welcome container">
     <p>Welcome</p>
-    <SignUpVue/>
+    <SignUpVue />
+    <LogInVue />
   </div>
 </template>
 
 <script>
 import SignUpVue from '@/components/SignUp.vue'
+import LogInVue from '@/components/LogIn.vue'
 
 export default {
 
   components: {
-    SignUpVue
+    SignUpVue,
+    LogInVue
   }
 
 }

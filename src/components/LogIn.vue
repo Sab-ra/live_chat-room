@@ -1,10 +1,9 @@
 <template>
-  <form @submit.prevent="handleSignupInput">
-    <input type="text" required placeholder="First name" v-model="displayName">
+  <form @submit.prevent="handleLoginInput">
     <input type="email" required placeholder="your@email.hear" v-model="email">
     <input type="password" required placeholder="password" v-model="password">
     <button>
-      Sign Up         
+      Log In
     </button>
   </form>
 </template>
@@ -15,15 +14,14 @@ import { ref } from 'vue'
 export default {
   setup() {
     //refs
-    let displayName = ref( '' )
     let email = ref( '' )
     let password = ref( '' )
 
-    const handleSignupInput = () => {
-      console.log( displayName.value, email.value, password.value )
+    const handleLoginInput = () => {
+      console.log( email.value, password.value )
     }
 
-    return { displayName, email, password, handleSignupInput }
+    return { email, password, handleLoginInput }
   }
 }
 </script>
